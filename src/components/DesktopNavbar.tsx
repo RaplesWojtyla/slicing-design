@@ -40,7 +40,7 @@ const DesktopNavbar = () => {
 						className="hover:text-accent hover:font-bold inline-block border-b border-transparent"
 						href=""
 					>
-						Home
+						Blogs
 					</a>
 				</li>
 			</ul>
