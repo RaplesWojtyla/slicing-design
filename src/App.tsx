@@ -1,7 +1,11 @@
+import DesktopNavbar from "./components/DesktopNavbar"
+import MobileNavbar from "./components/MobileNavbar"
+
 const App = () => {
 	return (
 		<>
-			<h1 className="text-4xl bg-black text-white">Hello, World!!</h1>
+			<DesktopNavbar />
+			<MobileNavbar />
 		</>
 	)
 }
