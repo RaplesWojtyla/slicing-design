@@ -10,7 +10,8 @@ export default {
         'accent': '#46A358',
       },
       screens: {
-        'tablet': '844px'
+        'desktop': '864px',
+        'tablet': '700px',
       }
     },
   },

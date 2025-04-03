@@ -1,11 +1,11 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
-// import { CiSun } from "react-icons/ci";
+import { CiSun } from "react-icons/ci";
 import { MdOutlineLogout } from "react-icons/md";
 
 const DesktopNavbar = () => {
 	return (
-		<header className="hidden md:flex justify-between items-center border-b pb-6">
+		<header className="hidden desktop:flex justify-between items-center border-b pb-6">
 			<div className="max-w-[150px]">
 				<img src="Logo.png" className="size-full" alt="greenshop-logo" />
 			</div>
@@ -46,9 +46,10 @@ const DesktopNavbar = () => {
 			</ul>
 
 			<div className="flex items-center gap-x-7">
-				{/* <button className="size-7 flex justify-center items-center rounded-md">
+				<button className="size-7 flex justify-center items-center rounded-md">
 					<CiSun className="size-7" />
-				</button> */}
+				</button>
+
 				<button className="size-5">
 					<BsSearch className="size-5" />
 				</button>

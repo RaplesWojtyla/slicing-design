@@ -1,10 +1,14 @@
-import { CiSearch } from "react-icons/ci"
+import { CiSearch, CiSun } from "react-icons/ci"
 import MenuNavbar from "./MenuNavbar"
 
-const MobileNavbar = () => {
+const TabletNavbar = () => {
 	return (
-		<header className="tablet:hidden flex items-center justify-between gap-4">
-			<div className="relative w-full">
+		<header className="hidden tablet:flex desktop:hidden items-center justify-between">
+			<div className="max-w-[150px]">
+				<img src="Logo.png" alt="greenshop-logo" />
+			</div>
+
+			<div className="relative w-full max-w-[350px]">
 				<input 
 					type="text"
 					placeholder="Find your plants"
@@ -13,11 +17,15 @@ const MobileNavbar = () => {
 				<CiSearch className="absolute left-3 top-1/2 -translate-y-1/2  text-gray-400 peer-focus:text-accent" size={20} />
 			</div>
 			
-			<div>
+			<div className="flex items-center gap-2">
+				<button>
+					<CiSun size={30} />
+				</button>
+
 				<MenuNavbar />
 			</div>
 		</header>
 	)
 }
 
-export default MobileNavbar
+export default TabletNavbar
