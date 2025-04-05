@@ -1,9 +1,9 @@
-import { CiSearch } from "react-icons/ci"
+import { CiSearch, CiSun } from "react-icons/ci"
 import MenuNavbar from "./MenuNavbar"
 
 const MobileNavbar = () => {
 	return (
-		<header className="tablet:hidden flex items-center justify-between gap-4">
+		<>
 			<div className="relative w-full">
 				<input 
 					type="text"
@@ -13,10 +13,14 @@ const MobileNavbar = () => {
 				<CiSearch className="absolute left-3 top-1/2 -translate-y-1/2  text-gray-400 peer-focus:text-accent" size={20} />
 			</div>
 			
-			<div>
+			<div className="flex items-center gap-2">
+				<button>
+					<CiSun size={30} />
+				</button>
+
 				<MenuNavbar />
 			</div>
-		</header>
+		</>
 	)
 }
 

@@ -5,7 +5,7 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
-		<div className='px-14 py-6 font-poppins'>
+		<div className='px-14 py-6 font-poppins min-h-screen'>
 			<App />
 		</div>
 	</StrictMode>,

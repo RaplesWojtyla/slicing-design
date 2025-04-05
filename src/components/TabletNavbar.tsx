@@ -3,7 +3,7 @@ import MenuNavbar from "./MenuNavbar"
 
 const TabletNavbar = () => {
 	return (
-		<header className="hidden tablet:flex desktop:hidden items-center justify-between">
+		<>
 			<div className="max-w-[150px]">
 				<img src="Logo.png" alt="greenshop-logo" />
 			</div>
@@ -24,7 +24,7 @@ const TabletNavbar = () => {
 
 				<MenuNavbar />
 			</div>
-		</header>
+		</>
 	)
 }
 

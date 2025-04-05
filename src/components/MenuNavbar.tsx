@@ -29,19 +29,22 @@ const MenuNavbar = () => {
 
 			<ul
 				ref={menuRef}
-				className="bg-rose-400 flex flex-col gap-6 fixed -right-64 top-0 bottom-0 w-64 h-screen py-20 px-10 text-white transition duration-500"
+				className="bg-gray-600 flex flex-col gap-6 fixed -right-64 top-0 bottom-0 w-64 h-screen pt-9 px-10 text-white transition duration-500"
 			>
-				<button 
-					className="absolute right-6 top-10"
-					onClick={closeMenu}
-				>
-					<RiCloseLargeFill size={20}/>
-				</button>
+				<div className="flex items-center justify-between mb-9">
+					<img src="Logo.png" className="max-w-[120px] tablet:hidden" alt="" />
+					<button 
+						className="tablet:absolute tablet:top-11 tablet:right-12"
+						onClick={closeMenu}
+					>
+						<RiCloseLargeFill className="text-white" size={20}/>
+					</button>
+				</div>
 
-				<li className="mt-2">
+				<li>
 					<a
 						className="hover:text-accent hover:font-bold inline-block border-b border-transparent"
-						href=""
+						href="#"
 					>
 						Home
 					</a>
@@ -49,7 +52,7 @@ const MenuNavbar = () => {
 				<li>
 					<a
 						className="hover:text-accent hover:font-bold inline-block border-b border-transparent"
-						href=""
+						href="#"
 					>
 						Shop
 					</a>
@@ -57,7 +60,7 @@ const MenuNavbar = () => {
 				<li>
 					<a
 						className="hover:text-accent hover:font-bold inline-block border-b border-transparent"
-						href=""
+						href="#"
 					>
 						Plant Care
 					</a>
@@ -65,7 +68,7 @@ const MenuNavbar = () => {
 				<li>
 					<a
 						className="hover:text-accent hover:font-bold inline-block border-b border-transparent"
-						href=""
+						href="#"
 					>
 						Blogs
 					</a>

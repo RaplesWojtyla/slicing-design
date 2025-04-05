@@ -1,11 +1,11 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { CiSun } from "react-icons/ci";
-import { MdOutlineLogout } from "react-icons/md";
+import { MdOutlineLogin } from "react-icons/md";
 
 const DesktopNavbar = () => {
 	return (
-		<header className="hidden desktop:flex justify-between items-center border-b pb-6">
+		<>
 			<div className="max-w-[150px]">
 				<img src="Logo.png" className="size-full" alt="greenshop-logo" />
 			</div>
@@ -14,7 +14,7 @@ const DesktopNavbar = () => {
 				<li className="relative">
 					<a 
 						className="hover:text-accent hover:font-bold inline-block border-b border-transparent"
-						href=""
+						href="#"
 					>
 						Home
 					</a>
@@ -22,7 +22,7 @@ const DesktopNavbar = () => {
 				<li className="relative">
 					<a 
 						className="hover:text-accent hover:font-bold inline-block border-b border-transparent"
-						href=""
+						href="#"
 					>
 						Shop
 					</a>
@@ -30,7 +30,7 @@ const DesktopNavbar = () => {
 				<li className="relative">
 					<a 
 						className="hover:text-accent hover:font-bold inline-block border-b border-transparent"
-						href=""
+						href="#"
 					>
 						Plant Care
 					</a>
@@ -38,7 +38,7 @@ const DesktopNavbar = () => {
 				<li className="relative">
 					<a 
 						className="hover:text-accent hover:font-bold inline-block border-b border-transparent"
-						href=""
+						href="#"
 					>
 						Blogs
 					</a>
@@ -57,11 +57,11 @@ const DesktopNavbar = () => {
 					<AiOutlineShoppingCart className="size-5" />
 				</button>
 				<button className="bg-accent/85 hover:bg-accent flex justify-center items-center gap-x-2 w-[100px] h-[35px] rounded-md text-white">
-					<MdOutlineLogout />
-					Logout
+					<MdOutlineLogin size={20} />
+					Login
 				</button>
 			</div>
-		</header>
+		</>
 	)
 }
 
