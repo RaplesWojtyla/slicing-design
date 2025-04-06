@@ -1,6 +1,7 @@
 import FilterSection from "./components/FilterSection"
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
+import ProductSection from "./components/ProductSection"
 
 const App = () => {
 	return (
@@ -13,6 +14,10 @@ const App = () => {
 
 			<section className="flex items-center tablet:justify-between max-w-full mb-12">
 				<FilterSection />
+			</section>
+
+			<section className="grid grid-cols-2 tablet:grid-cols-3 desktop:grid-cols-4 gap-4 tablet:gap-8 desktop:gap-10">
+				<ProductSection />
 			</section>
 		</>
 	)
